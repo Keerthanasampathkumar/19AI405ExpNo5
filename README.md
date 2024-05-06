@@ -69,9 +69,6 @@ def SimpleHillClimbing():
 SimpleHillClimbing()
 ```
 
-**Developed By: KARTHIKEYAN R**<br>
-**Register No: 212222240046**
-
 <table>
 <tr>
 <td valign=top>
