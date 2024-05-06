@@ -1,15 +1,16 @@
 <h1>ExpNo 5 : Implement Simple Hill Climbing Algorithm</h1> 
 <h3>Name: KEERTHANA S </h3>
 <h3>Register Number:212222230066 </h3>
-<H3>Aim:</H3>
-<p>Implement Simple Hill Climbing Algorithm and Generate a String by Mutating a Single Character at each iteration </p>
-<h2> Theory: </h2>
-<p>Hill climbing is a variant of Generate and test in which feedback from test procedure is used to help the generator decide which direction to move in search space.
-Feedback is provided in terms of heuristic function
-</p>
 
+# EX-05 Implement Simple Hill Climbing Algorithm
+### Aim:
+Implement Simple Hill Climbing Algorithm and Generate a String by&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;<br>
+Mutating a Single Character at each iteration.
+### Theory:
+Hill climbing is a variant of Generate and test in which feedback from test procedure is used to help the generator decide which direction to move in search space.
+Feedback is provided in terms of heuristic function.
 
-<h2>Algorithm:</h2>
+### Algorithm:
 <p>
 <ol>
  <li> Evaluate the initial state.If it is a goal state then return it and quit. Otherwise, continue with initial state as current state.</li> 
@@ -25,21 +26,15 @@ Feedback is provided in terms of heuristic function
 </ul>
 </li>
 </ol>
-
 </p>
-<hr>
-<h3> Steps Applied:</h3>
-<h3>Step-1</h3>
-<p> Generate Random String of the length equal to the given String</p>
-<h3>Step-2</h3>
-<p>Mutate the randomized string each character at a time</p>
-<h3>Step-3</h3>
-<p> Evaluate the fitness function or Heuristic Function</p>
-<h3>Step-4:</h3>
-<p> Loop Step -2 and Step-3  until we achieve the score to be Zero to achieve Global Minima.</p>
 
-### PROGRAM:
-```
+### Steps Applied:
+Step-1: Generate Random String of the length equal to the given String.<BR>
+Step-2: Mutate the randomized string each character at a time.<BR>
+Step-3: Evaluate the fitness function or Heuristic Function.<BR>
+Step-4: Lopp Step -2 and Step-3  until we achieve the score to be Zero to achieve Global Minima.<BR>
+### Program:
+```Python
 import random
 import string
 def generate_random_solution(answer):
@@ -71,16 +66,23 @@ def SimpleHillClimbing():
         if score<best_score:
             best=new_solution
             best_score=score
-#answer="Artificial Intelligence"
-#print(generate_random_solution(answer))
-#solution=generate_random_solution(answer)
-#print(evaluate(solution,answer))
 SimpleHillClimbing()
 ```
-<hr>
-<h2>Sample Input and Output</h2>
-<h2>Sample String:</h2> Artificial Intelligence
-<h2>Output:</h2>
+
+**Developed By: KARTHIKEYAN R**<br>
+**Register No: 212222240046**
+
+<table>
+<tr>
+<td valign=top>
+
+### Input String:
+Artificial Intelligence
+</td> 
+<td>
+
+### Output:
+
 Score: 643  Solution :  8RzF:oG ]%;CPORRMe!zGvk<br>
 Score: 609  Solution :  8RzF:oG ]%;CPqRRMe!zGvk<br>
 Score: 604  Solution :  8RzF:oG ]%;CPqRRMe!zGqk<br>
@@ -98,3 +100,9 @@ Score: 1  Solution :  Artificial Intelligencf<br>
 Score: 1  Solution :  Artificial Intelligencf<br>
 Score: 1  Solution :  Artificial Intelligencf<br>
 Score: 0  Solution :  Artificial Intelligence<br>
+</td>
+</tr> 
+</table>
+
+### Result:
+Thus the implementation of simple hill climbing algorithm was done successfully.
